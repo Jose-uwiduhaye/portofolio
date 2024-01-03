@@ -1,0 +1,221 @@
+@media(max-width: 700px){
+    .container{
+        flex-direction: column;
+       
+    }
+}
+   
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+:root{
+    --bg-color:black;
+    --second-bg-color: rgb(165, 165, 165);
+    --text-color:#fff;
+    --min-color:#0ef;
+}
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+}
+body{
+    background-color:   rgb(165, 165, 165);
+    color: var(--text-color);
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.header{
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+.logo{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 500;
+cursor: default;
+border-radius: 60%;
+}
+.navbar a{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: 3s ;
+}
+.navbar a:hover,
+    .navbar a:active{
+    color: (var(--min-color));
+    }
+    .me{
+        background-color: rgb(140, 145, 140);
+        color: black;
+        width:1450px;
+        height:50px;
+        padding: 0px;
+        border-radius: 60px;
+       }
+    ul{
+        list-style-type: none;
+        text-decoration: none;
+        display: flex;
+        float: right;
+        }
+    li a{
+        color:white;
+        
+        margin: 50px;
+        text-decoration: none;
+        
+        padding: 10px;
+        
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 60%;
+    }
+    .you{
+        text-align: center;
+        padding-top: 50px;
+        padding-right: 800px;
+    }
+    .de{
+        width: 70%;
+        height: 80%;
+        position: absolute;
+        bottom: 60px;
+        right: 100px;
+    
+          }
+    .de img{
+    height: 70%;
+    width: 50%;
+    position: absolute;
+    left: 55%;
+    bottom: 60px;
+          }
+    .w{
+        height: 90px;
+        width: 90px;
+        padding-right: 90px;
+    }
+    ul li a:hover{
+        color: aqua;
+    }
+    
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    body{
+        background-color: rgba(165,165,165);
+    }
+    .inner{
+        padding-top: 20px;
+    }
+    .header{
+        text-align: center;
+        color: bisque;
+        padding: 1rem;
+        position: relative;
+    }
+    .header:after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        height: 4px;
+        width: 100px;
+        background-color:gray
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 0.2rem;
+        padding: 0.5rem 60px;
+        font-size:1.3rem;
+    }
+    .skill-box{
+        padding: 1rem;
+        color:black;
+        cursor: pointer;
+    }
+    .skill-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+        position: relative;
+    }
+    .skill-title:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    height: 4px;
+    left: 50%;
+    border-radius: 0 2px 2px 0;
+    background-color:black
+    }
+    .skill-title:before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 60px;
+        height: 4px;
+        right: 50%;
+        border-radius: 2px 0 0 2px;
+        background-color: orange
+        }
+    .skill-icon{
+        width: 50px;
+        z-index: 2;
+    }
+    .img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .img:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 90px;
+        background: rgb(100, 100, 100, 0.5);
+        border-radius: 45px 0 0 45px;
+    }
+    .skill-title h3{
+        color: #fff;
+        margin-top: 0.5rem;
+    }

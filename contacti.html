@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contacti.css">
+</head>
+<body>
+    <header class="header">
+        <img src="images (1).png" width="40px" height="50px" class="logo">
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="contacti.html">Contact</a>
+            <a href="bestproject.html">Project</a>
+            <a href="skills.html">Skills</a>
+        </nav>
+    </header>
+    <section class="contact" id="contact">
+
+        <h2  class="heading">contact<span>Me</span></h2>
+        <form action="https://formsubmit.co/joseuwiduhayee@gmail.com" method="POST">
+            <div class="input-box">
+
+            <input type="text" placeholder="Full Name" id="name">
+            <input type="email" placeholder="Email Address" id="email">
+        </div>
+        <div class="input-box">
+
+            <input type="number" placeholder="Mobile Number" id="phone">
+            <input type="text" placeholder="Email subject" id="subject">
+        </div>
+        <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <button type="submit"value="Send Message" class="btn" onclick="sendMessage()">Send message</button>
+        <!-- <h3 style="margin-bottom: 100px; color: black;">Email:joseuwiduhayee@gmail.com<br>
+            Tel:+250587543969</h3> -->
+    </section>
+        </form>
+
+       
+    <script>
+        function sendMessage() {
+     
+          var Name = document.getElementById('name').value;
+          var phone = document.getElementById('phone').value;
+          var Message = document.getElementById('message').value;
+          var email = document.getElementById('email').value;
+          var subject = document.getElementById('subject').value;
+
+          
+          // You can add more validation here if needed
+          // Display a simple alert for demonstration
+          alert('Name: ' + Name + '\nphone: ' + phone + '\nsubject: ' + subject + '\nemail: '+email+
+                '\nmessage: ' + Message );
+        }
+                function sendEmail(){
+          Email.send({
+            securetoken: '49982986-e206-470f-b83d-d7d39e8a2401',
+            To : 'joseuwiduhayee@gmail.com',
+            From : document.getElementById('email').value,
+            Subject : "the subject",
+            Body : "Name:" + document.getElementById('name').value
+
+            
+            + "<br> Email: " + document.getElementById("email").value
+            + "<br> Phone: " + document.getElementById("phone").value
+            + "<br> Message: " + document.getElementById("message").value
+            + "<br> Subject: " +document.getElementById("subject").value
+  }).then(
+    message => alert("message sent")
+  );
+      }
+        
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+
+</html>
